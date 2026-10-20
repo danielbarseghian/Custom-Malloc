@@ -1,5 +1,11 @@
 #include <stdio.h> 
+#include <stdlib.h>
 
 int main (void) {
-  printf("hello world"); 
+  char *test = malloc(sizeof(char) * 10);
+
+  test[0] = 'a';
+  test[1] = 'b';
+
+  printf("%s\n", test);
 }
